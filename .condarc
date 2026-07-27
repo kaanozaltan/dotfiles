@@ -1,0 +1,6 @@
+channels:
+  - conda-forge
+  - nodefaults
+auto_activate_base: false
+solver: libmamba
+channel_priority: strict
