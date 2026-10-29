@@ -40,8 +40,12 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
-# colorized ls
+# colored prompt
+PROMPT='%B%F{green}%n@%m%f%b:%B%F{blue}%~%f%b$ '
+
+# colored ls
 export CLICOLOR=1
+export LSCOLORS="ExGxFxdaCxDaDahbadacec"
 alias ll="ls -lhF"
 alias la="ls -lAhF"
 alias lt="ls -lhFt"
@@ -60,7 +64,7 @@ mkcd() { mkdir -p "$1" && cd "$1"; }
 # print PATH one entry per line
 path() { echo "$PATH" | tr ':' '\n'; }
 
-# extract any archive: extract file.tar.gz
+# extract any archive
 extract() {
   case "$1" in
     *.tar.bz2) tar xjf "$1" ;;
