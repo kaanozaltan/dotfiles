@@ -1,1 +1,1 @@
-. "$HOME/.local/bin/env"
+. "$HOME/.bashrc"
